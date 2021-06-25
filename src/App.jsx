@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./paginas/Home";
 import Sobre from "./paginas/Sobre";
-import Pagina404 from "./paginas/Pagina404";
 import Post from "./paginas/Post";
+import Pagina404 from "./paginas/Pagina404";
+import Categoria from "./paginas/Categoria";
 import Cabecalho from "./components/Cabecalho";
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/sobre">
           <Sobre />
+        </Route>
+        <Route path="/categoria/:id">
+          <Categoria />
         </Route>
         <Route path="/posts/:id">
           <Post />
