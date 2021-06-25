@@ -1,2 +1,5 @@
 node_modules
 .eslintcache
+db.json
+package.json
+package-lock.json
