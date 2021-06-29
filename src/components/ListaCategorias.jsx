@@ -16,6 +16,7 @@ const ListaCategorias = () => {
         <Link to={`/categoria/${categoria.id}`}>
           <li
             className={`lista-categorias__categoria lista-categorias__categoria--${categoria.id}`}
+            key={categoria.id}
           >
             {categoria.nome}
           </li>
